@@ -11,22 +11,22 @@
     <div class="container">
       <h1 id="title">Customer survey form</h1>
       <p id="description">
-        Great customer feedback is indispensible for business
+        Great customer feedback is indispensable for business!
       </p>
 
       <form action="" id="survey-form">
         <label for="name" id="name-label"
-          >Name:
+          >Name: <br />
           <input type="text" id="name" placeholder="Enter your name" required />
         </label>
         <br />
         <label for="email" id="email-label"
-          >Email:
+          >Email: <br />
           <input type="email" id="email" placeholder="Email" required />
         </label>
         <br />
         <label for="number" id="number-label"
-          >Age:
+          >Age: <br />
           <input
             type="number"
             id="number"
@@ -36,54 +36,54 @@
             required
           />
         </label>
-        <br />
-        <br />
-        <p>Please select your gender:</p>
-        <input type="radio" name="gender" value="male" />
-        <label for="male">Male</label>
 
-        <input type="radio" name="gender" value="female" />
-        <label for="female">Female</label>
-        <br />
-        <br />
-        <p>Is this the first time you are using our Products and Services?</p>
-        <select name="services" id="dropdown">
-          <option value="">--Please choose an option--</option>
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-        <br />
-        <br />
+        <div class="gender">
+          <p>Please select your gender:</p>
+          <input type="radio" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
 
-        <p>Would you recommend it to your friends and / or colleagues?</p>
-        <input type="radio" name="rec" value="yes" />
-        <label for="yes">Yes</label>
-        <input type="radio" name="rec" value="no" />
-        <label for="no">No</label>
-        <br />
-        <br />
-        <p>Lorem ipsum dolor sit amet.</p>
-        <input type="checkbox" value="horns" name="horns" />
-        <label for="horns">Horns</label><br />
-        <input type="checkbox" value="ivory" name="horns" />
-        <label for="ivory">Ivory</label>
-        <br />
-        <br />
+        <div class="services">
+          <p>Is this the first time you are using our Products and Services?</p>
+          <select name="services" id="dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
 
-        <label for="additional-comments"
+        <div class="recommendation">
+          <p>Would you recommend it to your friends and / or colleagues?</p>
+          <input type="radio" name="rec" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="rec" value="no" />
+          <label for="no">No</label>
+        </div>
+
+        <div class="soc-media">
+          <p class="s-media">
+            Through what social media outlet did you discover our company?
+          </p>
+          <input type="checkbox" value="linkedin" name="linkedin" />
+          <label for="linkedin">LinkedIn</label><br />
+          <input type="checkbox" value="twitter" name="twitter" />
+          <label for="twitter">Twitter</label><br />
+          <input type="checkbox" value="facebook" name="facebook" />
+          <label for="facebook">Facebook</label><br />
+          <input type="checkbox" value="instagram" name="instagram" />
+          <label for="instagram">Instagram</label><br />
+          <input type="checkbox" value="pinterest" name="pinterest" />
+          <label for="none">Pinterest</label><br />
+        </div>
+
+        <label for="additional-comments" id="comments"
           >Do you have additional concerns?</label
         >
-        <br />
-        <textarea
-          name=""
-          id="additional-comments"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <br />
-        <br />
-        <p>Thanks a lot for completing our survey!</p>
-        <br />
+        <textarea name="" id="additional-comments"></textarea>
+
+        <p class="completion">Thank you for completing our survey!</p>
 
         <input type="submit" value="Submit" id="submit" />
       </form>
